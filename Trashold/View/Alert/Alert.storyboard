@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Booking Loading View Controller-->
+        <scene sceneID="adZ-zm-0XL">
+            <objects>
+                <viewController storyboardIdentifier="bookingScheduleLoadingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bKH-Ja-QW2" customClass="BookingLoadingViewController" customModule="Trashold" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WgS-50-F1T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPW-QP-dMx">
+                                <rect key="frame" x="134.5" y="375.5" width="145" height="145"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQC-SX-G52">
+                                        <rect key="frame" x="30.5" y="39.5" width="84" height="66"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoneIcon" translatesAutoresizingMaskIntoConstraints="NO" id="j9C-dC-27f">
+                                                <rect key="frame" x="23.5" y="0.0" width="37" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="j9C-dC-27f" secondAttribute="height" multiplier="1:1" id="FAi-vC-DOx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aXn-iF-HMj">
+                                                <rect key="frame" x="23.5" y="0.0" width="37" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aXn-iF-HMj" secondAttribute="height" multiplier="1:1" id="20X-Kr-LN0"/>
+                                                </constraints>
+                                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-Cc-xkE">
+                                                <rect key="frame" x="0.0" y="45" width="84" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UI0-Cc-xkE" secondAttribute="trailing" id="22R-gd-ZyF"/>
+                                            <constraint firstItem="aXn-iF-HMj" firstAttribute="centerX" secondItem="oQC-SX-G52" secondAttribute="centerX" id="8yL-zW-ucd"/>
+                                            <constraint firstItem="j9C-dC-27f" firstAttribute="top" secondItem="oQC-SX-G52" secondAttribute="top" id="KvE-cY-X1c"/>
+                                            <constraint firstItem="UI0-Cc-xkE" firstAttribute="top" secondItem="aXn-iF-HMj" secondAttribute="bottom" constant="8" id="Lqf-l9-IK5"/>
+                                            <constraint firstItem="UI0-Cc-xkE" firstAttribute="leading" secondItem="oQC-SX-G52" secondAttribute="leading" id="VBM-L7-KWA"/>
+                                            <constraint firstItem="aXn-iF-HMj" firstAttribute="top" secondItem="oQC-SX-G52" secondAttribute="top" id="ah7-tw-SB5"/>
+                                            <constraint firstItem="UI0-Cc-xkE" firstAttribute="top" secondItem="j9C-dC-27f" secondAttribute="bottom" constant="8" id="iZ2-zR-tBZ"/>
+                                            <constraint firstItem="j9C-dC-27f" firstAttribute="centerX" secondItem="oQC-SX-G52" secondAttribute="centerX" id="sN6-zl-VLX"/>
+                                            <constraint firstAttribute="bottom" secondItem="UI0-Cc-xkE" secondAttribute="bottom" id="yZm-qF-TtR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oQC-SX-G52" firstAttribute="centerY" secondItem="kPW-QP-dMx" secondAttribute="centerY" id="5vo-zK-d1d"/>
+                                    <constraint firstItem="oQC-SX-G52" firstAttribute="centerX" secondItem="kPW-QP-dMx" secondAttribute="centerX" id="IOh-NN-CZZ"/>
+                                    <constraint firstAttribute="width" secondItem="kPW-QP-dMx" secondAttribute="height" multiplier="1:1" id="aif-t2-Zut"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kPW-QP-dMx" firstAttribute="width" secondItem="WgS-50-F1T" secondAttribute="width" multiplier="0.35" id="dmQ-hm-rBk"/>
+                            <constraint firstItem="kPW-QP-dMx" firstAttribute="centerX" secondItem="WgS-50-F1T" secondAttribute="centerX" id="wcq-Gr-qCA"/>
+                            <constraint firstItem="kPW-QP-dMx" firstAttribute="centerY" secondItem="WgS-50-F1T" secondAttribute="centerY" id="z2g-8G-gQR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6i1-Ri-peN"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="aXn-iF-HMj" id="XA8-MA-BmK"/>
+                        <outlet property="doneImageView" destination="j9C-dC-27f" id="VB2-bq-0ek"/>
+                        <outlet property="loadingLabel" destination="UI0-Cc-xkE" id="0Er-78-K7g"/>
+                        <outlet property="loadingViewBg" destination="kPW-QP-dMx" id="vSb-Ts-hJ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYB-h1-1Po" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DoneIcon" width="25" height="25"/>
+    </resources>
+</document>

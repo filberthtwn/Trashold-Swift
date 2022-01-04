@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WIT-nM-YTo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule-->
+        <scene sceneID="vFF-hT-DO1">
+            <objects>
+                <viewController id="OxH-fN-Cfn" customClass="ScheduleViewController" customModule="Trashold" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oqb-Mh-49m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="udO-tt-XJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="udO-tt-XJ7" firstAttribute="leading" secondItem="Goi-Wr-wwc" secondAttribute="leading" id="6zK-yF-2JQ"/>
+                            <constraint firstItem="Goi-Wr-wwc" firstAttribute="bottom" secondItem="udO-tt-XJ7" secondAttribute="bottom" id="H6N-JJ-gy2"/>
+                            <constraint firstItem="Goi-Wr-wwc" firstAttribute="trailing" secondItem="udO-tt-XJ7" secondAttribute="trailing" id="mdK-Pt-kgY"/>
+                            <constraint firstItem="udO-tt-XJ7" firstAttribute="top" secondItem="Goi-Wr-wwc" secondAttribute="top" id="q4y-jj-ASM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Goi-Wr-wwc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Schedule" id="I00-Da-hrD"/>
+                    <connections>
+                        <outlet property="scheduleTableView" destination="udO-tt-XJ7" id="3OU-ex-GlP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbL-lz-BHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="791.51785714285711"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="Soj-hr-NRN">
+            <objects>
+                <navigationController title="Schedule" automaticallyAdjustsScrollViewInsets="NO" id="WIT-nM-YTo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="ScheduleTabIcon" id="g82-IO-X72"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cNi-4C-HJJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99607843139999996" green="0.80784313730000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OxH-fN-Cfn" kind="relationship" relationship="rootViewController" id="IZt-hr-c06"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihQ-Vk-3QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="792"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ScheduleTabIcon" width="25" height="25"/>
+    </resources>
+</document>

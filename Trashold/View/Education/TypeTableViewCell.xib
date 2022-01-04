@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="TypeTableViewCell" customModule="HomeButton" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNS-Tx-Dzd">
+                        <rect key="frame" x="124" y="41" width="56" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 2.500/ kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-cm-H0m">
+                        <rect key="frame" x="302" y="41" width="96" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dat-JS-J7I">
+                        <rect key="frame" x="16" y="0.0" width="102" height="99.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paper" translatesAutoresizingMaskIntoConstraints="NO" id="VjR-s4-evR">
+                                <rect key="frame" x="8" y="8" width="86" height="81.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VjR-s4-evR" firstAttribute="centerY" secondItem="Dat-JS-J7I" secondAttribute="centerY" constant="-1" id="VMO-ob-7h4"/>
+                            <constraint firstItem="VjR-s4-evR" firstAttribute="centerX" secondItem="Dat-JS-J7I" secondAttribute="centerX" id="YsR-5e-FEY"/>
+                            <constraint firstItem="VjR-s4-evR" firstAttribute="leading" secondItem="Dat-JS-J7I" secondAttribute="leading" constant="8" id="eDP-wY-2K8"/>
+                            <constraint firstItem="VjR-s4-evR" firstAttribute="top" secondItem="Dat-JS-J7I" secondAttribute="top" constant="8" id="mqW-vi-DUS"/>
+                            <constraint firstAttribute="trailing" secondItem="VjR-s4-evR" secondAttribute="trailing" constant="8" id="uQi-vn-0MN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Dat-JS-J7I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="815-VR-L4Z"/>
+                    <constraint firstAttribute="trailing" secondItem="bd7-cm-H0m" secondAttribute="trailing" constant="16" id="9xV-No-1KE"/>
+                    <constraint firstItem="PNS-Tx-Dzd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Em4-bF-lnd"/>
+                    <constraint firstItem="bd7-cm-H0m" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Kpz-8Y-vGo"/>
+                    <constraint firstAttribute="trailing" secondItem="Dat-JS-J7I" secondAttribute="trailing" constant="296" id="cqX-84-Qv5"/>
+                    <constraint firstItem="PNS-Tx-Dzd" firstAttribute="leading" secondItem="Dat-JS-J7I" secondAttribute="trailing" constant="6" id="hCP-Sl-nWV"/>
+                    <constraint firstItem="Dat-JS-J7I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="qMM-uv-4G4"/>
+                    <constraint firstItem="Dat-JS-J7I" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rHH-7Q-42l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageType" destination="VjR-s4-evR" id="J7f-TN-7H9"/>
+                <outlet property="priceLabel" destination="bd7-cm-H0m" id="ZNo-gI-e9r"/>
+                <outlet property="titleLabel" destination="PNS-Tx-Dzd" id="23A-pl-Wso"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="119.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Paper" width="900" height="900"/>
+    </resources>
+</document>
